@@ -1,0 +1,28 @@
+package nca.init;
+
+import nca.util.Reference;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.common.util.EnumHelper;
+
+
+
+@EventBusSubscriber
+
+public class ModArmor {
+
+	public static ArmorMaterial MATERIALNAME = EnumHelper.addArmorMaterial("hazmatsuit", Reference.MODID+":hazmatsuit", 50, new int[] {0,1,2,0}, 14, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 1.0f);
+
+	public static ItemArmor HELMET_HAZMAT;
+	public static ItemArmor CHESTPLATE_HAZMAT;
+	public static ItemArmor LEGGINGS_HAZMAT;
+	public static ItemArmor BOOTS_HAZMAT;
+
+	
+
+
+	
+	
+}
